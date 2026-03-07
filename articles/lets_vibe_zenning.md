@@ -25,7 +25,7 @@ https://github.com/5843435/markdown-sheet
 Moonshineは英語モデルとそれ以外でライセンス体系が異なります。英語モデルはMITライセンスで商用利用可能な一方、英語以外のモデルはMoonshine Community Licenseが適用されます。
 個人でツールや趣味プロジェクトとして日本語・韓国語・中国語などのモデルを使う分には問題ありませんが、年収100万ドル以上の商用利用は商用ライセンス契約が必要となりますのでご注意ください。
 :::
-:::message warning
+:::message
 **必要な事前設定**
 * Zenn側で「GitHub連携」の設定を行い、連携済みリポジトリのURLを手元に用意しておいてください。
 * Moonshineの音声認識モデルは[手順](https://github.com/straygizmo/markdown-sheet/blob/main/docs/model-setup.md)のとおり別途取得・変換が必要です。
@@ -184,7 +184,6 @@ const systemPrompt =
 
 ## 謝辞
 @akinobukatoさん、すばらしいツール＆記事をありがとうございます。
-勝手ながらすでにPRを上げさせていただいておりますが、また今回の機能を盛り込んだ「クソデカPR」を上げさせていただくかも知れません。何卒ご了承ください。
 
 高精度な音声認識エンジン「Moonshine Voice」
 https://github.com/moonshine-ai/moonshine
