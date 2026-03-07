@@ -10,7 +10,7 @@ published: false
 
 昨今の「Vibe Coding」や「Vibe Working」の流れに乗って、Zennの記事執筆も「Vibe」でやってしまおうという提案です。その名も **「Vibe Zenning」**！
 
-この記事では、@akinobukatoさんの[こちらの記事](https://zenn.dev/acntechjp/articles/5a8b7b334b15bc)にインスパイアされ、私が機能を拡張（魔改造）した「Markdown Studio」を活用した執筆フローをご紹介します。
+この記事では、@akinobukatoさんの[こちらの記事](https://zenn.dev/acntechjp/articles/5a8b7b334b15bc)にインスパイアされ、私(というかClaude Opas4.6)が機能を拡張した「Markdown Studio」を活用した執筆フローをご紹介します。
 
 オリジナルのMarkdown Studioはこちら：
 https://github.com/5843435/markdown-sheet
@@ -21,12 +21,18 @@ https://github.com/5843435/markdown-sheet
 音声入力には、最近話題の高速・高精度な音声認識モデル **Moonshine** を使用しています。ローカル環境で動作するため、プライバシーを保ちつつ非常にスムーズな書き起こしが可能です。
 :::
 
-## 1. セットアップと設定
-
-まずは[改造版のMarkdown Studio](https://github.com/straygizmo/markdown-sheet)をセットアップし、Zennモードを有効にします。
 :::message alert
-事前にZenn側で「GitHub連携」の設定を行い、連携済みリポジトリのURLを手元に用意しておいてください。
+Moonshineは英語モデルとそれ以外でライセンス体系が異なります。英語モデルはMITライセンスで商用利用可能な一方、英語以外のモデルはMoonshine Community Licenseが適用されます。
+個人でツールや趣味プロジェクトとして日本語・韓国語・中国語などのモデルを使う分には問題ありませんが、年収100万ドル以上の商用利用は商用ライセンス契約が必要となりますのでご注意ください。
 :::
+:::message warning
+**必要な事前設定**
+* Zenn側で「GitHub連携」の設定を行い、連携済みリポジトリのURLを手元に用意しておいてください。
+* Moonshineの音声認識モデルは[手順](https://github.com/straygizmo/markdown-sheet/blob/main/docs/model-setup.md)のとおり別途取得・変換が必要です。
+:::
+
+## 1. セットアップと設定
+まずは[改造版のMarkdown Studio](https://github.com/straygizmo/markdown-sheet)をセットアップし、Zennモードを有効にします。
 
 ### モデルとAPIの設定
 右上の設定ボタン（歯車アイコン）をクリックし、APIキーや使用する音声認識モデル（Moonshineなど）の設定を行います。
@@ -179,3 +185,6 @@ const systemPrompt =
 ## 謝辞
 @akinobukatoさん、すばらしいツール＆記事をありがとうございます。
 勝手ながらすでにPRを上げさせていただいておりますが、また今回の機能を盛り込んだ「クソデカPR」を上げさせていただくかも知れません。何卒ご了承ください。
+
+高精度な音声認識エンジン「Moonshine Voice」
+https://github.com/moonshine-ai/moonshine
