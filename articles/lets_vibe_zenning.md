@@ -10,7 +10,7 @@ published: false
 
 昨今の「Vibe Coding」や「Vibe Working」の流れに乗って、Zennの記事執筆も「Vibe」でやってしまおうという提案です。その名も **「Vibe Zenning」**！
 
-この記事では、@akinobukatoさんの[こちらの記事](https://zenn.dev/acntechjp/articles/5a8b7b334b15bc)にインスパイアされ、私(というかClaude Opas4.6)が機能を拡張した「Markdown Studio」を活用した執筆フローをご紹介します。
+この記事では、@akinobukatoさんの[こちらの記事](https://zenn.dev/acntechjp/articles/5a8b7b334b15bc)にインスパイアされ、私(というかClaude Code (Opus4.6))が機能を拡張した「Markdown Studio」を活用した執筆フローをご紹介します。
 
 オリジナルのMarkdown Studioはこちら：
 https://github.com/5843435/markdown-sheet
